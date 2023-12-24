@@ -39,12 +39,10 @@
   }
   .move-right{
     position: relative;
-    transition: transform 0.3s ease;
-    transform: translateX(85px);
+    transform: translateX(0px);
   }
   .move-right:hover .text {
     opacity: 1;
-    height: auto; /* Expand to the natural height of the content */
   }
 
   .move-right:hover {
@@ -52,26 +50,23 @@
   }
   .move-left {
     position: relative;
-    transition: transform 0.3s ease;
-    transform: translateX(150px);
+    transform: translateX(65px);
   }
   
   .move-left:hover {
-    transform: translateX(10px);
+    transform: translateX(0px);
   }
   
   .text {
     margin-left: 10px;
       display: inline;
       opacity: 0;
-      height: 0;
-     
       transition: opacity 1s ease, height 1s ease; /* Transition opacity and height */
     }
     
     .move-left:hover .text {
       opacity: 1;
-      height: auto; /* Expand to the natural height of the content */
+       /* Expand to the natural height of the content */
     }
 
     .fa.fa-phone.fa-inverse {
