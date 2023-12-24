@@ -24,11 +24,12 @@
     backface-visibility: hidden;
 
     &__text {
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
     }
 
     &__text,
     a {
+      color: white;
       font-size: 2.4rem;
 
       @include respond(phone) {
@@ -36,4 +37,47 @@
       }
     }
   }
+  .move-right{
+    position: relative;
+    transition: transform 0.3s ease;
+    transform: translateX(85px);
+  }
+  .move-right:hover .text {
+    opacity: 1;
+    height: auto; /* Expand to the natural height of the content */
+  }
+
+  .move-right:hover {
+    transform: translateX(0px);
+  }
+  .move-left {
+    position: relative;
+    transition: transform 0.3s ease;
+    transform: translateX(150px);
+  }
+  
+  .move-left:hover {
+    transform: translateX(10px);
+  }
+  
+  .text {
+    margin-left: 10px;
+      display: inline;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: opacity 1s ease, height 1s ease; /* Transition opacity and height */
+    }
+    
+    .move-left:hover .text {
+      opacity: 1;
+      height: auto; /* Expand to the natural height of the content */
+    }
+
+    .fa.fa-phone.fa-inverse {
+      font-size: 2.4rem;
+    }
+    .fa.fa-envelope.fa-inverse{
+      font-size: 2.4rem;
+    }
 }
