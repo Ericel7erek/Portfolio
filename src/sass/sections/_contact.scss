@@ -61,13 +61,20 @@
   .move-right{
     transform: translateX(-55px)
   }
-  
 }
+
   .text {
     margin-left: 10px;
       display: inline;
       opacity: 0;
       transition: opacity 1s ease, height 1s ease; /* Transition opacity and height */
+    }
+    @media (max-width: 767px) {
+      .text {
+        opacity: 1;
+        display: inline;
+      }
+      
     }
     
     .move-left:hover .text {
