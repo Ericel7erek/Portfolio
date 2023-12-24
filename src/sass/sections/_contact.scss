@@ -45,9 +45,6 @@
     opacity: 1;
   }
 
-  .move-right:hover {
-    transform: translateX(0px);
-  }
   .move-left {
     position: relative;
     transform: translateX(65px);
@@ -57,6 +54,15 @@
     transform: translateX(0px);
   }
   
+  @media (max-width: 767px) {
+    .move-left {
+      transform: translateX(0px);
+    }
+  .move-right{
+    transform: translateX(-55px)
+  }
+  
+}
   .text {
     margin-left: 10px;
       display: inline;
