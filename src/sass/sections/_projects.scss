@@ -10,6 +10,37 @@
   .h3 {
   color: $dark-blue-text;
   }
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .tablink {
+    background-color: #555;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    width: 33.33%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+
+  .tablink:hover {
+    background-color: #777;
+  }
+
+  .tablink.active {
+    background-color: #333;
+  }
+
+  /* Tab content */
+  .tabcontent {
+    display: none;
+  }
   .project-wrapper {
   color: $dark-blue-text;
     margin-bottom: 15rem;
