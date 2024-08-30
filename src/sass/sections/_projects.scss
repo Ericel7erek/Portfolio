@@ -18,7 +18,7 @@
   }
 
   .tablink {
-    background-color: #555;
+    background-color: transparent;
     color: white;
     padding: 14px 20px;
     cursor: pointer;
@@ -27,6 +27,8 @@
     border: none;
     outline: none;
     transition: background-color 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16;
   }
 
   .tablink:hover {
@@ -42,7 +44,7 @@
     display: none;
   }
   .project-wrapper {
-  color: $dark-blue-text;
+    color: $dark-blue-text;
     margin-bottom: 15rem;
 
     @include respond(phone) {
