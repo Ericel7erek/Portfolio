@@ -1,3 +1,10 @@
+html,
+body,
+.custom-cursor,
+.your-container-element {
+  cursor: none;
+}
+
 html {
   font-size: 62.5%;
 
@@ -11,4 +18,32 @@ body {
   text-align: center;
   scroll-behavior: smooth;
   background-color: $white-color;
+  cursor: none;
+}
+
+.custom-cursor {
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ffff00);
+  background-size: 400% 400%;
+  animation: gradient-animation 5s ease infinite;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 1000;
+  transition: transform 0.1s ease;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }

@@ -40,6 +40,8 @@
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
+    <div class="custom-cursor"></div>
+
     <div id="top"></div>
 
     <!-- **** Hero Section **** -->
@@ -110,7 +112,7 @@ Eager to bring my love for programming to the forefront, I'm diving headfirst in
       <!-- Tab Navigation -->
       <div class="tabs">
         <button class="tablink" onclick="openTab(event, 'React')">React Projects</button>
-        <button class="tablink" onclick="openTab(event, 'Others')">ReactNative</button>
+        <button class="tablink" onclick="openTab(event, 'Others')">React Native</button>
         <button class="tablink" onclick="openTab(event, 'FullStack')">Threejs</button>
         <button class="tablink" onclick="openTab(event, 'Others')">Web Scraping</button>
         <button class="tablink" onclick="openTab(event, 'Others')">Ethical Hacking Tools</button>
@@ -433,6 +435,15 @@ Eager to bring my love for programming to the forefront, I'm diving headfirst in
 
       // Initialize ScrollReveal for the first load
       ScrollReveal().reveal('.load-hidden', { delay: 300 });
+    </script>
+    <script>
+    const cursor = document.querySelector('.custom-cursor');
+
+  document.addEventListener('mousemove', (e) => {
+    const scrollX = window.scrollX || window.pageXOffset;
+    const scrollY = window.scrollY || window.pageYOffset;
+    cursor.style.transform = `translate(${e.clientX + scrollX}px, ${e.clientY + scrollY}px)`;
+  });
     </script>
   </body>
 </html>

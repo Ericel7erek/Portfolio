@@ -17,11 +17,13 @@
     margin-bottom: 20px;
   }
 
+
+
   .tablink {
     background-color: transparent;
     color: white;
     padding: 14px 20px;
-    cursor: pointer;
+    // cursor: pointer;
     width: 33.33%;
     text-align: center;
     border: none;
@@ -29,20 +31,38 @@
     transition: background-color 0.3s;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16;
+    font-weight: bold;
+    border-radius: 99px;
   }
 
   .tablink:hover {
-    background-color: #777;
+    background-image: linear-gradient(to right, lightgreen, green);
+    color: #000000;
   }
 
   .tablink.active {
-    background-color: #333;
+    border-image-slice: 1;
+    color: #000000;
+    background-image: linear-gradient(to right, lightgreen, green);
+    font-weight: bold;
   }
 
   /* Tab content */
   .tabcontent {
     display: none;
   }
+
+  @media (max-width: 768px) {
+    .tabs {
+      flex-wrap: wrap;
+    }
+
+    .tablink {
+      border-radius: 1px;
+      padding: 0px;
+    }
+  }
+
   .project-wrapper {
     color: $dark-blue-text;
     margin-bottom: 15rem;
