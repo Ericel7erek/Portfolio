@@ -29,9 +29,10 @@ body {
   height: 40px;
   border-radius: 50%;
   position: absolute;
-  pointer-events: none;
+  pointer-events: none !important;
   z-index: 1000;
   transition: transform 0.1s ease;
+  mix-blend-mode: difference;
 }
 
 @keyframes gradient-animation {
