@@ -757,7 +757,7 @@
     document.addEventListener('mousemove', (e) => {
       const scrollX = window.scrollX || window.pageXOffset;
       const scrollY = window.scrollY || window.pageYOffset;
-      cursor.style.transform = `translate(${e.clientX + scrollX}px, ${e.clientY + scrollY}px)`;
+      cursor.style.transform = `translate(${e.clientX + scrollX -18}px, ${e.clientY + scrollY -40}px)`;
     });
   </script>
 </body>
