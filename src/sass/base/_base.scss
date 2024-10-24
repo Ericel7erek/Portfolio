@@ -31,7 +31,7 @@ body {
   position: absolute;
   pointer-events: none !important;
   z-index: 1000;
-  transition: transform 0.1s ease;
+  transition: transform;
   mix-blend-mode: difference;
 }
 
