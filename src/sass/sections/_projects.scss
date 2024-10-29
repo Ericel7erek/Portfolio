@@ -35,6 +35,22 @@
     border-radius: 99px;
     transition: 2s;
   }
+  .bigprojects {
+    background-color: transparent;
+    color: white;
+    padding: 14px 20px;
+    // cursor: pointer;
+    // width: 33.33%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16;
+    font-weight: bold;
+    border-radius: 99px;
+    transition: 2s;
+  }
 
   .tablink:hover {
     background-image: linear-gradient(to right, lightgreen, green);
