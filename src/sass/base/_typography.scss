@@ -40,7 +40,7 @@ a:hover {
 
 .text-color-main {
   @include supportColorForIE11();
-
+  font-family: 'Montserrat';
   // Responsive text purple style
   @include respond(phone) {
     background-image: none;
