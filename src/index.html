@@ -60,8 +60,9 @@
       <div class="row about-wrapper">
         <div class="col-md-6 col-sm-12">
           <div class="about-wrapper__image load-hidden">
-            <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="300px"
-              src="assets/profile.jpg" alt="Profile Image" />
+             <img alt="Profile Image" id="hoverElement" class="img-fluid hover rounded shadow-lg" height="auto" width="300px"
+              src="assets/profile.jpg" alt="Profile Image" /> 
+              <canvas id="three-canvas" class="img-fluid rounded shadow-lg" height="auto" width="300px"></canvas>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
@@ -958,6 +959,26 @@
   <!-- /END Footer Section -->
 
   <script defer type="module" src="index.js"></script>
+  <script defer type="module" src="./scripts/threejs.js"></script>
+
+<script>
+  const hoverElement = document.getElementById('hoverElement');
+  const threecanvas = document.getElementById('three-canvas')
+  hoverElement.addEventListener('mouseover', () => {
+    hoverElement.classList.add('hidden');
+
+    // Wait for the transition to end before setting display to none
+    setTimeout(() => {
+      hoverElement.style.display = 'none';
+    }, 2000); // Match this duration with the CSS transition duration
+  });
+
+  threecanvas.addEventListener('mouseleave', () => {
+    hoverElement.classList.remove('hidden');
+    hoverElement.style.display = 'block'; // Reset the display if needed
+  });
+</script>
+
   <script>
     // Function to handle tab switching
     function openTab(evt, tabName) {

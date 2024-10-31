@@ -64,6 +64,18 @@ body {
   max-width: 34.5%;
   height: auto;
 }
+.hover {
+  position: absolute;
+  display: block;
+  transition: opacity 2s; /* Apply transition to opacity */
+}
+
+.hover.hidden {
+  opacity: 0;
+  // display: none; /* When the 'hidden' class is added, it fades out */
+}
+
+
 .project-img-fluid {
   max-width: 100%;
   height: auto;
