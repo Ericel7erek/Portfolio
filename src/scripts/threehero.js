@@ -35,7 +35,7 @@ let clock = new THREE.Clock();
 async function loadModel() {
     return new Promise((resolve, reject) => {
         loader.load(
-            new URL('../../static/model/3dmodel.glb', import.meta.url).toString(),
+            new URL('../../static/model/MacbookPro.glb', import.meta.url).toString(),
             (gltf) => {
                 console.log(gltf);
                 
