@@ -39,7 +39,8 @@
   <div id="top"></div>
 
   <!-- **** Hero Section **** -->
-  <section id="hero" class="jumbotron">
+  <canvas id="three"  style=" z-index: -2;"></canvas>
+  <section id="hero" class="jumbotron" style="position: absolute; z-index: 2;">
     <div class="container">
       <h1 class="hero-title load-hidden">
         Hi, my name is <span class="text-color-main">Eric Alaa</span>
@@ -960,6 +961,7 @@
 
   <script defer type="module" src="index.js"></script>
   <script defer type="module" src="./scripts/threejs.js"></script>
+  <script defer type="module" src="./scripts/threehero.js"></script>
 
 <script>
   const hoverElement = document.getElementById('hoverElement');
