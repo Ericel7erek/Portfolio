@@ -34,7 +34,7 @@ let clock = new THREE.Clock();
 async function loadModel() {
     return new Promise((resolve, reject) => {
         loader.load(
-            new URL('../../static/model/Avatarismo.glb', import.meta.url).toString(),
+            new URL('../../../static/model/Avatarismo.glb', import.meta.url).toString(),
             (gltf) => {
                 model = gltf.scene;
                 model.scale.setScalar(5);
